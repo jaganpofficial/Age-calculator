@@ -1,5 +1,6 @@
 function calculateAge() {
     let inputDate = document.getElementById("date").value;
+    inputDate.max = new Date().toISOString().split("T")[0];
     
     if (inputDate) {
         let birthDate = new Date(inputDate);
